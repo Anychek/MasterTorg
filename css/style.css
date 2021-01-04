@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Helvetica', sans-serif; /* Имя шрифта */
     src: url(fonts/Helvetica.otf); /* Путь к файлу со шрифтом */
-   }
+}
 body{
     margin: 0;
     font-family: 'Arsenal', sans-serif; 
@@ -74,23 +74,21 @@ body{
 .form-button{
     margin-left: 30px;
     cursor: pointer;
+    display: block;
 }
 .form-button.search{
-    display: block;
     width: 25px;
     height: 25px;
     background: #E95D2A url(img/search.svg) no-repeat;
     border: none;
 }
 .form-button.user{
-    display: block;
     width: 25px;
     height: 25px;
     background: #E95D2A url(img/user.svg) no-repeat;
     border: none;
 }
 .form-button.shopping-cart{
-    display: block;
     width: 30px;
     height: 30px;
     background: #E95D2A url(img/shopping-cart.svg) no-repeat;
