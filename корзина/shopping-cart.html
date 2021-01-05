@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+	<link rel="stylesheet" href="../css/cash.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+				<a href="#" class = "logo_img"></a>
+				<div class="number">
+					<img src="img/number.png" alt="Доставим всё и всем 377">
+				</div>
+				<div class="container-form">
+					<form action="form.php" class="form" method="POST">
+						<input type="text" placeholder="Поиск товаров" class = "form_search" id = "form_search" name = "search">
+						<select class = "categories" name="Категории" id="categories">
+							<option value="">Все категории</option>
+							<option value="">Алкоголь</option>
+							<option value="">Безалкогольные напитки</option>
+							<option value="">Кофе</option>
+							<option value="">Чай</option>
+						</select>
+					</form>
+				</div>
+				<button class="header_button user"></button>
+				<button class="header_button shopping-cart"></button>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="main_inner">
+				<div class="main_cart">
+					<h5 class = "main_cart-title">Корзина (5)</h5>
+				</div>
+				<div class="main_goods">
+					<div class="main_goods-good">
+						<img src="img/ahmad tea.png" alt="Ahmad Tea" class="main_good-img main_img-left">
+						<div class="main-desc">
+							<p class="main-name">Чай</p>
+							<div class="main-text">
+								<p>Ahmad tea Чай Milk Oolong | 25 шт.</p>
+								<p>Чай Улун с ароматом молока</p>
+							</div>
+						</div>
+						<div class="main-quantity"><i class="fa fa-plus-square" aria-hidden="true"></i><span class = "main_icon">10</span><i class="fa fa-minus-square" aria-hidden="true"></i>
+						</div>
+						<div class="main-price">
+							<div class="price-name">Цена</div>
+							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "price-num_down">-25%</span>
+						</div>
+						<div class="main-summa">
+							<div class="price-name">Сумма</div>
+							<p class="price-num">742.98 ₽</p>
+						</div>
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<div class="main_goods-good">
+						<img src="img/макмай итальянский.png" alt="Макмай испанский" class="main_good-img main_img-left">
+						<div class="main-desc">
+							<p class="main-name">Чай</p>
+							<div class="main-text">
+								<p>Ahmad tea Чай Milk Oolong | 25 шт.</p>
+								<p>Чай Улун с ароматом молока</p>
+							</div>
+						</div>
+						<div class="main-quantity"><i class="fa fa-plus-square" aria-hidden="true"></i><span class = "main_icon">10</span><i class="fa fa-minus-square" aria-hidden="true"></i>
+						</div>
+						<div class="main-price">
+							<div class="price-name">Цена</div>
+							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "price-num_down">-25%</span>
+						</div>
+						<div class="main-summa">
+							<div class="price-name">Сумма</div>
+							<p class="price-num">742.98 ₽</p>
+						</div>
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<div class="main_goods-good">
+						<img src="img/макмай мексиканский.png" alt="Макмай Мексиканский" class="main_good-img main_img-left">
+						<div class="main-desc">
+							<p class="main-name">Чай</p>
+							<div class="main-text">
+								<p>Ahmad tea Чай Milk Oolong | 25 шт.</p>
+								<p>Чай Улун с ароматом молока</p>
+							</div>
+						</div>
+						<div class="main-quantity"><i class="fa fa-plus-square" aria-hidden="true"></i><span class = "main_icon">10</span><i class="fa fa-minus-square" aria-hidden="true"></i>
+						</div>
+						<div class="main-price">
+							<div class="price-name">Цена</div>
+							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "price-num_down">-25%</span>
+						</div>
+						<div class="main-summa">
+							<div class="price-name">Сумма</div>
+							<p class="price-num">742.98 ₽</p>
+						</div>
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<div class="main_goods-good">
+						<img src="img/садочок мультифрукт.png" alt="Садочок Мульфрукт" class="main_good-img main_img-left">
+						<div class="main-desc">
+							<p class="main-name">Чай</p>
+							<div class="main-text">
+								<p>Ahmad tea Чай Milk Oolong | 25 шт.</p>
+								<p>Чай Улун с ароматом молока</p>
+							</div>
+						</div>
+						<div class="main-quantity"><i class="fa fa-plus-square" aria-hidden="true"></i><span class = "main_icon">10</span><i class="fa fa-minus-square" aria-hidden="true"></i>
+						</div>
+						<div class="main-price">
+							<div class="price-name">Цена</div>
+							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "price-num_down">-25%</span>
+						</div>
+						<div class="main-summa">
+							<div class="price-name">Сумма</div>
+							<p class="price-num">742.98 ₽</p>
+						</div>
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<div class="main_goods-good">
+						<img src="img/садочок яблвин.png" alt="Садочок Яблоко-Виноград" class="main_good-img main_img-left">
+						<div class="main-desc">
+							<p class="main-name">Чай</p>
+							<div class="main-text">
+								<p>Ahmad tea Чай Milk Oolong | 25 шт.</p>
+								<p>Чай Улун с ароматом молока</p>
+							</div>
+						</div>
+						<div class="main-quantity"><i class="fa fa-plus-square" aria-hidden="true"></i><span class = "main_icon">10</span><i class="fa fa-minus-square" aria-hidden="true"></i>
+						</div>
+						<div class="main-price">
+							<div class="price-name">Цена</div>
+							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "price-num_down">-25%</span>
+						</div>
+						<div class="main-summa">
+							<div class="price-name">Сумма</div>
+							<p class="price-num">742.98 ₽</p>
+						</div>
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<button class = "order_goods-button">Вернуться на главную страницу</button>
+				</div>
+				
+				<div class="main_checkout">
+					<form action="form.php" class="checkout_form">
+						<fieldset>
+							<legend class = "checkout_form-inner">
+								<span class="checkout-name">Оформление заказа</span>
+								<p class="checkout-inf">Укажите контактную информацию</p>
+							
+								<div class="checkout-block">
+									<label for = "name" class="checkout-text">Ваше имя</label>
+									<input type="text" id = "name" class="checkout_text">
+								</div>
+
+								<div class="checkout-block">
+									<label for="number">Номер телефона<sup><i class="fa fa-asterisk" aria-hidden="true"></i></sup></label>
+									<input type="number" id = "number" class="checkout_text middle">
+								</div>
+
+								<div class="checkout-block">
+									<label for="adres">Адрес доставки<sup><i class="fa fa-asterisk" aria-hidden="true"></i></sup></label>
+									<input type="text" id = "adres" class="checkout_text middle">
+								</div>
+
+								<div class="checkout-block">
+									<label for="data">Дата доставки<sup><i class="fa fa-asterisk" aria-hidden="true"></i></sup></label>
+								<input type="data" id = "data" class="checkout_text down" placeholder="- -">
+								</div>
+							</legend>
+						</fieldset>
+				</form>
+				</div>
+				
+				<div class="order_sum order">
+					<span class = "order_sum-blue">Сумма заказа</span>
+					<div class="order_sum-cost order_sum-inf">
+						<span>Стоимость</span>
+						<span>1 470 ₽</span>
+					</div>
+					<div class="order_sum-sale order_sum-inf">
+						<span>Скидка</span>
+						<span>180 ₽</span>
+					</div>
+					<div class="order_sum-pay order_sum-inf">
+						<span>К оплате</span>
+						<span>1 290 ₽</span>
+					</div>
+					<button class = "order_sum-button">Вернуться на главную страницу</button>
+				</div>
+				<div class="main_maps">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A890e838a6bc8965e0e4a27d001d3c802411713a26723ebd85a2dccc38e5fd679&amp;source=constructor" width="328" height="278" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_inner">
+				<div class="footer_logo">
+					<a href="#" class = "footer_logo-img"></a>
+					<div class="footer_block phone">
+						<p class = "footer_block-title phone"><span class = "footer_block-img"></span>377</p>
+						<p class = "footer_block-item">Операторы на связи</p>
+						<p class = "footer_block-item">с 9:00 до 21:00</p>
+					</div>
+				</div>
+				<div class="footer_blocks">
+					<div class="footer_block">
+						<p class = "footer_block-title servis">Сервис</p>
+						<p class = "footer_block-item">Зоны доставки</p>
+						<p class = "footer_block-item">Партнерство</p>
+						<p class = "footer_block-item">Помошь покупателю</p>
+						<p class = "footer_block-item">Вакансии</p>
+					</div>
+					<div class="footer_block">
+						<p class = "footer_block-title inf">Информация</p>
+						<p class = "footer_block-item">Каталог </p>
+						<p class = "footer_block-item">О компании</p>
+						<p class = "footer_block-item">Доставка</p>
+						<p class = "footer_block-item">Отзыв</p>
+						<p class = "footer_block-item">Контакты</p>
+					</div>
+					<div class="footer_block">
+						<p class = "footer_block-title social">Социальные сети</p>
+						<div class="social">
+							<span class = "social-icon vk"></span>
+							<span class = "social-icon telegram"></span>
+							<span class = "social-icon whatsup"></span>
+							<span class = "social-icon instagram"></span>
+							<span class = "social-icon viber"></span>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
