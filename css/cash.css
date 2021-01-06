@@ -34,14 +34,14 @@ button{
     background: url(../корзина/img/logo.svg);
 }
 .number{
-	width: 178px;
-	height: 37px;
-	background: linear-gradient(180deg, #B5D0F1 0%, #DAE7F8 100%);
-	border-radius: 8px;
-	text-align: center;
 	cursor: pointer;
 	margin-left: 12px;
 	margin-right: 12px;
+}
+.number-gif{
+	width: 178px;
+	height: 37px;
+	border-radius: 8px;
 }
 /*form*/
 .form{
@@ -50,7 +50,7 @@ button{
 	width: 799px;
 	height: 32px;
 	background: #FFFFFF;
-	border: 2px solid #2DA9EF;
+	border: 2px solid #393939;
 	box-sizing: border-box;
 	border-radius: 4px;
 }
@@ -66,7 +66,7 @@ button{
 .categories{
 	background: #fff;
 	border: none;
-	border-left: 1px solid #999999;
+
 	border-radius: 0.5px;
 	outline: none;
 	color: #999;
@@ -156,13 +156,29 @@ button{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-self: stretch;
+	align-self: flex-start;
 }
 .price-name, .price-num{
 	font-size: 20px;
 	line-height: 25px;
 	font-weight: 400;
 	color: #2E2E2E;
+}
+.price-num_red{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 25px;
+	color: #931515;
+	padding-top: 26px;
+}
+.prev-price{
+	position: relative;
+	right: -40px;
+	font-size: 13px;
+	line-height: 16px;
+	text-decoration-line: line-through;
+	font-weight: 400;
+	color: #666666;
 }
 .price-num_down{
 	background: #FE4646;
@@ -213,7 +229,7 @@ button{
 	font-size: 24px;
 	line-height: 165%;
 	font-weight: 700;
-	color: #2DA9EF;
+	color: #931515;
 }
 .checkout-inf{
 	font-size: 18px;
@@ -254,6 +270,86 @@ button{
 .checkout_text.down{
 	width: 187px;
 }
+.sms-button{
+	width: 315px;
+	height: 53px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 1px #000000;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	line-height: 25px;
+	color: #7E7E7E;
+	font-weight: 400;
+}
+.confirm-button{
+	width: 315px;
+	height: 53px;
+	left: 224px;
+	top: 322px;
+	background: #8A8A8A;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	line-height: 23px;
+	color: #FFFFFF;
+	font-weight: 700;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.send-kod{
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #7E7E7E;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.error-kod{
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 400;
+	color: #FF0000;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.kod-button{
+	width: 315px;
+	height: 53px;
+	border:none;
+	outline: none;
+	background: #FFFFFF;
+	border: 1px solid #FF0000;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 25px;
+	color: #FF0000;
+	margin-top: 60px;
+}
+.kod-desc{ 
+	font-size: 17px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #2E2E2E;
+	align-self: center;
+	margin-bottom: 30px;
+}
+.input-kod{
+	width: 315px;
+	height: 53px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 1px #000000;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	font-style: 18px;
+	color: #111;
+	padding: 5px 10px 5px 10px;
+}
 .main_maps{
 	grid-area: maps;
 	background: #fff;
@@ -272,8 +368,8 @@ button{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.order_sum-blue{
-	color: #2DA9EF;
+.order_sum-red{
+	color: #931515;;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 30px;

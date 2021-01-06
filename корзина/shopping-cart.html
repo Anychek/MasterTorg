@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shopping Cart</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -17,17 +16,17 @@
 			<div class="header_inner">
 				<a href="#" class = "logo_img"></a>
 				<div class="number">
-					<img src="img/number.png" alt="Доставим всё и всем 377">
+					<img class = "number-gif" src="img/377.gif" alt="Доставим всё и всем 377">
 				</div>
 				<div class="container-form">
 					<form action="form.php" class="form" method="POST">
 						<input type="text" placeholder="Поиск товаров" class = "form_search" id = "form_search" name = "search">
 						<select class = "categories" name="Категории" id="categories">
-							<option value="">Все категории</option>
-							<option value="">Алкоголь</option>
-							<option value="">Безалкогольные напитки</option>
-							<option value="">Кофе</option>
-							<option value="">Чай</option>
+							<option value="Все категории">Все категории</option>
+							<option value="Алкоголь">Алкоголь</option>
+							<option value="Безалкогольные напитки">Безалкогольные напитки</option>
+							<option value="Кофе">Кофе</option>
+							<option value="Чай">Чай</option>
 						</select>
 					</form>
 				</div>
@@ -56,12 +55,13 @@
 						</div>
 						<div class="main-price">
 							<div class="price-name">Цена</div>
-							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "prev-price">742.98 ₽</span>
+							<p class="price-num">742.98 ₽</p>
 							<span class = "price-num_down">-25%</span>
 						</div>
 						<div class="main-summa">
 							<div class="price-name">Сумма</div>
-							<p class="price-num">742.98 ₽</p>
+							<p class="price-num_red">742.98 ₽</p>
 						</div>
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</div>
@@ -78,12 +78,13 @@
 						</div>
 						<div class="main-price">
 							<div class="price-name">Цена</div>
-							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "prev-price">742.98 ₽</span>
+							<p class="price-num">742.98 ₽</p>
 							<span class = "price-num_down">-25%</span>
 						</div>
 						<div class="main-summa">
 							<div class="price-name">Сумма</div>
-							<p class="price-num">742.98 ₽</p>
+							<p class="price-num_red">742.98 ₽</p>
 						</div>
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</div>
@@ -100,12 +101,13 @@
 						</div>
 						<div class="main-price">
 							<div class="price-name">Цена</div>
-							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "prev-price">742.98 ₽</span>
+							<p class="price-num">742.98 ₽</p>
 							<span class = "price-num_down">-25%</span>
 						</div>
 						<div class="main-summa">
 							<div class="price-name">Сумма</div>
-							<p class="price-num">742.98 ₽</p>
+							<p class="price-num_red">742.98 ₽</p>
 						</div>
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</div>
@@ -122,12 +124,13 @@
 						</div>
 						<div class="main-price">
 							<div class="price-name">Цена</div>
-							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "prev-price">742.98 ₽</span>
+							<p class="price-num">742.98 ₽</p>
 							<span class = "price-num_down">-25%</span>
 						</div>
 						<div class="main-summa">
 							<div class="price-name">Сумма</div>
-							<p class="price-num">742.98 ₽</p>
+							<p class="price-num_red">742.98 ₽</p>
 						</div>
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</div>
@@ -144,12 +147,13 @@
 						</div>
 						<div class="main-price">
 							<div class="price-name">Цена</div>
-							<p class="price-num">742.98 ₽<sup><strike>742.98 ₽</strike></sup></p>
+							<span class = "prev-price">742.98 ₽</span>
+							<p class="price-num">742.98 ₽</p>
 							<span class = "price-num_down">-25%</span>
 						</div>
 						<div class="main-summa">
 							<div class="price-name">Сумма</div>
-							<p class="price-num">742.98 ₽</p>
+							<p class="price-num_red">742.98 ₽</p>
 						</div>
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</div>
@@ -188,7 +192,7 @@
 				</div>
 				
 				<div class="order_sum order">
-					<span class = "order_sum-blue">Сумма заказа</span>
+					<span class = "order_sum-red">Сумма заказа</span>
 					<div class="order_sum-cost order_sum-inf">
 						<span>Стоимость</span>
 						<span>1 470 ₽</span>
@@ -201,7 +205,24 @@
 						<span>К оплате</span>
 						<span>1 290 ₽</span>
 					</div>
-					<button class = "order_sum-button">Вернуться на главную страницу</button>
+					<!-- <button class = "order_sum-button">Вернуться на главную страницу</button> -->
+
+					<!-- <span class = "send-kod">Мы отправили код на номер  +38 071 999 99 99 </span>
+					<button class = "sms-button">Вернуться на главную страницу</button>
+					<button class = "confirm-button">Подтвердить</button>
+					<p class="kod-desc">Получить новый код можно через 1:00</p> -->
+
+					<!-- <button class = "kod-button">2 3 4 5 6 7</button>
+					<span class = "error-kod">Неверный код. Попробуйте еще раз</span>
+					<p class="kod-desc">Получить новый код можно через 1:00</p> -->
+
+					<span class = "send-kod">Мы отправили код на номер  +38 071 999 99 99 </span>
+					<form action="form.php">
+						<input class = "input-kod" type = "text"></input>
+					</form>
+					<button class = "confirm-button">Подтвердить</button>
+					<p class="kod-desc">Получить новый код можно через 1:00</p>
+
 				</div>
 				<div class="main_maps">
 					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A890e838a6bc8965e0e4a27d001d3c802411713a26723ebd85a2dccc38e5fd679&amp;source=constructor" width="328" height="278" frameborder="0"></iframe>
