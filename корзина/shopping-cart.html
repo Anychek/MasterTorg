@@ -4,11 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
 	<link rel="stylesheet" href="../css/cash.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -18,20 +20,42 @@
 				<div class="number">
 					<img class = "number-gif" src="img/377.gif" alt="Доставим всё и всем 377">
 				</div>
-				<div class="container-form">
-					<form action="form.php" class="form" method="POST">
-						<input type="text" placeholder="Поиск товаров" class = "form_search" id = "form_search" name = "search">
-						<select class = "categories" name="Категории" id="categories">
-							<option value="Все категории">Все категории</option>
-							<option value="Алкоголь">Алкоголь</option>
-							<option value="Безалкогольные напитки">Безалкогольные напитки</option>
-							<option value="Кофе">Кофе</option>
-							<option value="Чай">Чай</option>
-						</select>
-					</form>
+				<nav class = "header-nav">
+					<ul class = "header-menu">
+						<li class = "header-menu_item">
+							<a href="#">Каталог</a>
+						</li>
+						<li class = "header-menu_item">
+							<a href="#">О компании</a>
+						</li>
+						<li class = "header-menu_item">
+							<a href="#">Условия доставки</a>
+						</li>
+						<li class = "header-menu_item">
+							<a href="#">Отзывы</a>
+						</li>
+						<li class = "header-menu_item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="wrapper-form">
+					<div class="container-form">
+					    <input type="text" class="form-search" placeholder="Поиск товаров">
+					    <select class = "categories" name="Категории" id="categories">
+								<option value="Все категории">Все категории</option>
+								<option value="Алкоголь">Алкоголь</option>
+								<option value="Безалкогольные напитки">Безалкогольные напитки</option>
+								<option value="Кофе">Кофе</option>
+								<option value="Чай">Чай</option>
+							</select>
+					    <i class="fa fa-search" aria-hidden="true"></i>
+					 </div>
 				</div>
-				<button class="header_button user"></button>
-				<button class="header_button shopping-cart"></button>
+				<div class="header-buttons">
+					<a href="#" class="header_button user"></a>
+					<a href="#" class="header_button shopping-cart"></a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -271,6 +295,8 @@
 			</div>
 		</div>
 	</footer>
+	
 	<script src="script.js"></script>
+	<script src="search-form.js"></script>
 </body>
 </html>
