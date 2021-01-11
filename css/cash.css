@@ -23,22 +23,24 @@ button{
 	border-bottom: 1px #C4C4C4 solid;
 }
 .header_inner{
-	display: flex;
+	display: grid;
+	grid-template-columns: 0.25fr 0.25fr 3fr 0.10fr 0.75fr;
+	grid-template-rows: 61px;
 	align-items: center; 
-	height: 61px;
-	flex-direction: row;
-
+	grid-template-areas: 'logo number nav form buttons';
 }
 .logo_img{
     display: block;
+    grid-area: logo;
 	width: 63px;
 	height: 51px;
     background: url(../корзина/img/logo.svg);
 }
 .number{
+	grid-area: number;
 	cursor: pointer;
 	margin-left: 12px;
-	margin-right: 67px;
+	margin-right: 5px;
 }
 .number-gif{
 	width: 178px;
@@ -46,13 +48,16 @@ button{
 	border-radius: 8px;
 }
 /*menu*/
+.header-nav{
+	grid-area: nav;
+}
 .header-menu{
 	display: flex;
 	justify-content: space-between;
 }
 .header-menu_item{
 	text-align: center;
-	margin-right: 50px;
+	margin-right: 45px;
 }
 .header-menu_item a{
 	font-size: 14px;
@@ -62,12 +67,14 @@ button{
 }
 /*form*/
 .wrapper-form{
-  position: absolute;
-  top: 2%;
-  left: 80%;
-  transform: translate( -100%, 0);
+	grid-area: form;
+  	position: relative;
+  	left: 100%;
+  	transform: translate( -100%, 0);
 }
-
+.none{
+	display: none;
+}
 .container-form{
   width: 0px;
   height: 32px;
@@ -160,6 +167,7 @@ option::placeholder {
 
 .header-buttons{
 	display: flex;
+	grid-area: buttons;
 }
 
 
@@ -596,3 +604,4 @@ option::placeholder {
 }.social-icon.viber{ 
 	background: url(../корзина/img/viber.svg);
 }
+
